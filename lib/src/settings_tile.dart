@@ -86,7 +86,7 @@ class SettingsTile extends AbstractTile {
 
   @override
   Widget build(BuildContext context) {
-    final platform = this.platform ?? Theme.of(context).platform;
+    /* final platform = this.platform ?? Theme.of(context).platform;
 
     switch (platform) {
       case TargetPlatform.iOS:
@@ -99,7 +99,8 @@ class SettingsTile extends AbstractTile {
 
       default:
         return iosTile(context);
-    }
+    } */
+    return androidTile(context);
   }
 
   Widget iosTile(BuildContext context) {
